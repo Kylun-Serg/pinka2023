@@ -1,0 +1,107 @@
+.module-blog {
+  background-color: rgba(227, 247, 255, 0.25);
+  padding: rem(10) 0;
+  @media(min-width: 768px) {
+    padding: rem(20) 0;
+  }
+  @media(min-width: 991px) {
+    padding: rem(40) 0;
+  }
+  // .module-blog__container
+  &__container {
+
+  }
+  // .module-blog__hedaer
+  &__hedaer {}
+  // .module-blog__items
+  &__items {
+    padding: rem(26) rem(20);
+    margin: rem(-26) rem(-20);
+  }
+  // .module-blog__wrapper
+  &__wrapper {}
+  // .module-blog__item
+  &__item {}
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.item-module-blog {
+  background-color: $white;
+  // border: 1px solid rgba(149, 205, 178, 0.5);
+  box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: rem(16);
+  outline: rem(1) solid $green;
+  outline-offset: rem(-6);
+  @media(any-hover: hover) {
+    transition: outline .3s ease 0s, outline-offset .3s ease 0s;
+    &:hover {
+      outline-offset: 0;
+      // border-color: transparent;
+    }
+  }
+  // .item-module-blog__image
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: rem(10);
+    img {
+      width: 1000%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  @media(min-width: 768px) {
+    margin-bottom: rem(20);
+  }
+  // .item-module-blog__title
+  &__title {
+    font-size: rem(18);
+    line-height: lh(20, 18);
+    font-weight: 600;
+    margin-bottom: rem(10);
+    @media(any-hover: hover) {
+      transition: color .3s ease 0s;
+      &:hover {
+        text-decoration: underline;
+        color: $green;
+      }
+    }
+    @media(min-width: 460px) {
+      font-size: rem(20);
+      line-height: lh(24, 20);
+    }
+    
+    @media(min-width: 768px) {
+      margin-bottom: rem(20);
+      line-height: lh(30, 24);
+    }
+  }
+  // .item-module-blog__description
+  &__description {
+    // font-size: rem(16);
+    font-weight: 300;
+    margin-bottom: rem(10);
+    line-height: 1.2;
+    @media(min-width: 768px) {
+      margin-bottom: rem(20);
+    }
+  }
+  // .item-module-blog__link
+  &__link {
+    font-size: rem(16);
+    line-height: lh(18, 16);
+    @media(min-width: 768px) {
+      font-size: rem(18);
+      line-height: lh(24, 18);
+    }
+  }
+  // .item-module-blog__icon
+  &__icon {
+   
+  }
+}

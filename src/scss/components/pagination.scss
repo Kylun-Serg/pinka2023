@@ -1,0 +1,64 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  @media(min-width: 576px) {
+    gap: rem(10);
+  }
+  // .pagination__btn
+  &__btn, &__link {
+    width: rem(36);
+    height: rem(36);
+    border-radius: rem(8);
+    border: 1px solid $green;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:active {
+      transform: translateY(rem(2));
+    }
+    @media(any-hover: hover) {
+      &:hover {
+        border-width: rem(2);
+      }
+    }
+    @media(min-width: 576px) {
+      width: rem(50);
+      height: rem(50);
+    }
+  }
+  &__btn {
+    
+  }
+  // .pagination__btn-left
+  &__btn-left {
+    .pagination__icon {
+      transform: rotate(180deg);
+    }
+  }
+  // .pagination__icon
+  &__icon {
+    fill: $lDark;
+    width: rem(24);
+    height: rem(24);
+  }
+  // .pagination__list
+  &__list {
+    display: flex;
+    gap: rem(10);
+  }
+  // .pagination__item
+  &__item {}
+  // .pagination__link
+  &__link {
+    font-weight: 600;
+    &_active {
+      background-color: $green;
+      color: $white;
+    }
+    
+  }
+  // .pagination__btn-right
+  &__btn-right {}
+}

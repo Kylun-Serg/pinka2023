@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.html',{})
+        <main class="page page_home">
+            @@include('html/section/_main.html',{})
+            @@include('html/section/_set-goods.html',{})
+            @@include('html/section/_popular-goods.html',{})
+            @@include('html/section/_suggestion-goods.html',{})
+            @@include('html/section/_module-review.html',{})
+            @@include('html/section/_module-blog.html',{})
+            @@include('html/section/_about-us.html',{})
+        </main>
+        @@include('html/_footer.html',{})
+        @@include('html/section/navigation-toolbar.html',{})
+    </div>
+    @@include('html/_js.html',{})
+</body>
+
+</html>

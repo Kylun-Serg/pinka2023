@@ -1,0 +1,242 @@
+.btn {
+  background-color: $green;
+  color: $white;
+  font-size: rem(16);
+  line-height: lh(24, 16);
+  padding: rem(10) rem(18);
+  border-radius: rem(8);
+  display: inline-flex;
+  align-items: center;
+  gap: rem(8);
+  border: 1px solid $green;
+  &-arrow__icon {
+    fill: $white;
+    width: rem(20);
+    height: rem(20);
+    transition: transform .3s ease 0s;
+  }
+  @media(any-hover: hover) {
+    transition: background-color .3s ease 0s;
+    &:hover {
+      background-color: darken($green, 8%);
+      .btn-arrow__icon {
+        transform: translateX(rem(5)) scale(1.1);
+        
+      }
+    }
+  }
+  &:active {
+    transform: translateY(rem(1));
+  }
+  @media(min-width: 756px) {
+    padding: rem(11) rem(36);
+  }
+}
+
+.actions-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $green;
+  border-radius: 50%;
+  @media (any-hover: hover) {
+    transition: background-color .3s ease 0s;
+    &:hover {
+      background-color: $green;
+      .actions-header__icon {
+        fill: $white;
+      }
+      .actions-header__count {
+        background-color: $white;
+        border: 1px solid $green;
+        color: $lDark;
+      }
+    }
+  }
+  &:active {
+    .actions-btn__icon {
+      transform: translateY(rem(2));
+    }
+  }
+  &__count {
+    position: absolute;
+    top: rem(-8);
+    right: rem(-8);
+    background-color: $green;
+    border-radius: 50%;
+    width: rem(24);
+    height: rem(24);
+    font-size: rem(14);
+    line-height: 1;
+    color: $white;
+    font-weight: 500;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s ease 0s, color .3s ease 0s;
+  }
+  &__icon {
+    fill: $lDark;
+    transition: fill .3s ease 0s, transform .1s ease 0s;
+  }
+}
+
+
+.btn-catalog {
+  background-color: $green;
+  color: $white;
+  font-size: rem(18);
+  line-height: lh(22, 18);
+  font-weight: 600;
+  padding: rem(10) rem(18);
+  border-radius: rem(8);
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+  border-bottom: 2px solid $green;
+  @media(min-width: 460px) {
+    padding: rem(12) rem(22);
+  }
+  @media(min-width: 576px) {
+    font-size: rem(19);
+    line-height: lh(24, 19);
+    padding: rem(14) rem(34);
+    gap: rem(10);
+  }
+ 
+  &__icon {
+    width: rem(24);
+    height: rem(24);
+    fill: $white;
+    transition: transform .3s ease 0s;
+  }
+
+  @media(any-hover: hover) {
+    transition: box-shadow .3s ease 0s;
+    &:hover {
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+      .btn-catalog__icon {
+        transform: rotate(90deg);
+      }
+    }
+    &:active {
+      border-color: $lDark;
+      transform: translate(0, rem(2));
+    }
+  }
+}
+
+.phone-btn {
+  flex: 0 0 auto;
+  width: rem(50);
+  height: rem(50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(149, 205, 178, 0.25);
+  &__icon {
+    width: rem(24);
+    height: rem(24);
+    fill: $lDark;
+  }
+  @media(any-hover: hover) {
+    &:hover .phone-btn__icon {
+      transform: rotate(-25deg);
+    }
+  }
+}
+
+.phone-arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(36);
+  height: rem(36);
+  &_active {
+    .phone-arrow-btn__icon {
+      transform: scaleY(-1);
+    }
+  }
+  @media(any-hover:hover) {
+    &:hover {
+      .phone-arrow-btn__icon {
+        fill: $green;
+      }
+    }
+  }
+  &__icon {
+    flex: 0 0 auto;
+    width: rem(18);
+    height: rem(16);
+    transition: fill .3s ease 0s, transform .3s ease 0s;
+  }
+}
+
+@keyframes phone-pulse-anime {
+  50% {
+    box-shadow: 0 0 0 0px rgba(228, 242, 235, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 rem(30) rgba(207, 241, 207, 0);
+  }
+}
+
+
+@keyframes phone-rotate-anime {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
+.close-btn {
+  width: rem(40);
+  height: rem(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media(any-hover: hover) {
+    &:hover {
+      .close-btn__icon {
+        fill: $green;
+      }
+    }
+  }
+  &:active {
+    .close-btn__icon {
+      transform: translateY(rem(2));
+    }
+  }
+  &__icon {
+    transition: transform .1s ease 0s;
+    width: rem(26);
+    height: rem(26);
+    fill: $lDark;
+    transition: fill .3s ease 0s;
+  }
+}
+
+
+.btn-transparent {
+  background-color: transparent;
+  color: $lDark;
+  font-weight: 600;
+  border: 1px solid transparent;
+  .review-module__button-icon {
+    fill: $lDark;
+  }
+  @media(any-hover:hover) {
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $green;
+    }
+  }
+}

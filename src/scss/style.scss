@@ -1,0 +1,59 @@
+/*включає SASS-модуль математичних обчислень. Тепер ми можемо використовувати поділ за допомогою math.div(число, число).*/
+@use "sass:math";
+
+/*Підключення міксинів*/
+@import "./components/mixins";
+
+/*Підключення шрифтів*/
+@import "./fonts/fonts";
+
+/*Підключення іконочних шрифтів*/
+// @import "./fonts/icons";
+
+/*Підключення перемінних та сітки*/
+@import "./setting";
+
+/*Обнуленння стилів*/
+@import "./components/null";
+
+/*Підключення глобальних стилів*/
+@import "./global";
+
+/*Підключення базових стилів, шаблонів та допоміжних класів*/
+
+/*Підключенчення компонентів base*/
+@import "./components/base";
+@import "./components/button";
+@import "./components/card";
+@import "./components/counter";
+@import "./components/burger";
+@import "./components/bredcrumbs";
+@import "./components/checkbox";
+@import "./components/pagination";
+@import "./components/tabs";
+// @import 'nouislider/dist/nouislider.css';
+@import '../../node_modules/swiper/swiper';
+
+/*Підключенчення libs*/
+@import "./libs/select";
+
+/*Підключення стилів окремих блоків*/
+@import './sections/header';
+@import './sections/main';
+@import './sections/set-goods';
+@import './sections/popular-goods';
+@import './sections/suggestion-goods';
+@import './sections/module';
+@import './sections/module-review';
+@import './sections/module-blog';
+@import './sections/about-us';
+@import './sections/footer';
+@import './sections/navigation-toolbar';
+
+
+
+/*Підключення стилів окремих сторінок*/
+@import './page/catalog';
+@import './page/product';
+@import './page/order';
+@import './page/info-page';

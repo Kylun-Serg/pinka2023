@@ -1,0 +1,33 @@
+<article class="product-card">
+  <a href="#" class="product-card__image">
+    <img src="../img/products/image1.jpg" alt="Мило з ромашкою">
+  </a>
+  <div class="product-card__content">
+    <div class="product-card__weight">
+      <span>100 гр.</span>
+      <span class="weight_active">200 гр.</span>
+    </div>
+    <h3 class="product-card__title"><a href="#">Натуральне мило з ромашкою</a></h3>
+    <div class="product-card__rating rating-card">
+      <svg class="rating-card__icon">
+        <use xlink:href="@img/icons/icons.svg#rating"></use>
+      </svg>
+      5.0 <a href="#">(40 відгуків)</a>
+    </div>
+  </div>
+  <div class="product-card__footer">
+    <div class="product-card__price">45 грн</div>
+    <div class="product-card__buttons">
+      <button class="product-card__button button-card__favorite">
+        <svg class="favorite__icon">
+          <use xlink:href="@img/icons/icons.svg#favorite"></use>
+        </svg>
+      </button>
+      <button class="product-card__button button-card__cart">
+        <svg class="cart__icon">
+          <use xlink:href="@img/icons/icons.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</article>

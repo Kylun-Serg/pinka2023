@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Каталог"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main class="page page__product">
+      <div class="page__container">
+
+        <div class="page__header">
+          @@include('html/components/bredcrumbs.html',{})
+        </div>
+
+        <div class="product">
+          <div class="product__header">
+            <div class="product__slider slider-product">
+              <div class="slider-product__main main-product-slider swiper">
+                <div class="swiper-wrapper main-product-slider__wrapper">
+                  <div class="main-product-slider__slide swiper-slide">
+                    <img class="main-product-slider__image" src="./img/products/image4.jpg" alt="">
+                  </div>
+                  <div class="main-product-slider__slide swiper-slide">
+                    <img class="main-product-slider__image" src="./img/products/image8.jpg" alt="">
+                  </div>
+                  <div class="main-product-slider__slide swiper-slide">
+                    <img class="main-product-slider__image" src="./img/products/image1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="slider-product__thumb thumb-product-slider swiper">
+                <div class="thumb-product-slider__wrapper swiper-wrapper">
+                  <div class="thumb-product-slider__slide swiper-slide">
+                    <img class="thumb-product-slider__image" src="./img/products/image4.jpg" alt="">
+                  </div>
+                  <div class="thumb-product-slider__slide swiper-slide">
+                    <img class="thumb-product-slider__image" src="./img/products/image8.jpg" alt="">
+                  </div>
+                  <div class="thumb-product-slider__slide swiper-slide">
+                    <img class="thumb-product-slider__image" src="./img/products/image1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content content-product">
+              <div class="content-product__header header-product">
+                <h1 class="header-product__title">Шампунь з білою глиною</h1>
+                <div class="header-product__row">
+                  <span class="header-product__availability">
+                    <svg class="header-product__availability-icon">
+                      <use xlink:href="@img/icons/icons.svg#availability"></use>
+                    </svg>
+                    В наявності
+                  </span>
+                  <div class="header-product__review review-header-product">
+
+                    <div class="review-header-product__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="@img/icons/icons.svg#rating"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="@img/icons/icons.svg#rating"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="@img/icons/icons.svg#rating"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="@img/icons/icons.svg#rating"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="@img/icons/icons.svg#rating"></use>
+                      </svg>
+                    </div>
+
+                    <a href="#" class="review-header-product__review">
+                      <svg class="review-header-product__review-icon">
+                        <use xlink:href="@img/icons/icons.svg#chat"></use>
+                      </svg>
+                      93 відгуків
+                    </a>
+                  </div>
+                  <div class="header-product__model">
+                    Модель: <span>62003836</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content-product__body body-product">
+                <div class="body-product__header">
+                  <div class="body-product__price">400 грн.</div>
+                  <button class="body-product__favorite">
+                    <div class="body-product__favorite-caircle">
+                      <svg class="body-product__favorite-icon">
+                        <use xlink:href="@img/icons/icons.svg#favorite"></use>
+                      </svg>
+                    </div>
+                    <span>В обране</span>
+                  </button>
+                </div>
+                <div class="body-product__weight">
+                  <div class="product-weight__title">
+                    <svg class="product-weight__icon">
+                      <use xlink:href="@img/icons/icons.svg#question"></use>
+                    </svg>
+                    Вага:
+                  </div>
+                  <div class="product-weight">
+                    <span>100 гр.</span>
+                    <span class="weight_active">200 гр.</span>
+                  </div>
+                </div>
+                <div class="body-product__actions actions-body-product">
+                  <div class="actions-body-product__counter counter">
+                    <button class="counter__control">
+                      <svg class="counter__icon">
+                        <use xlink:href="@img/icons/icons.svg#minus"></use>
+                      </svg>
+                    </button>
+                    <div class="counter__input">
+                      <input type="text" class="counter__input__quantity" placeholder="1">
+                    </div>
+                    <button class="counter__control">
+                      <svg class="counter__icon">
+                        <use xlink:href="@img/icons/icons.svg#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button type="button" class="actions-body-product__btn">
+                    <svg class="actions-body-product__icon">
+                      <use xlink:href="@img/icons/icons.svg#cart"></use>
+                    </svg>
+                    Купити
+                  </button>
+                </div>
+              </div>
+              <div class="content-product__footer footer-product">
+                <div class="footer-product__social social-footer-product">
+                  <div class="social-footer-product__title">Поділитися товаром:</div>
+                  <div class="social-footer-product__list">
+                    <a href="#" class="social-footer-product__link">
+                      <svg class="social-footer-product__icon">
+                        <use xlink:href="@img/icons/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="social-footer-product__link">
+                      <svg class="social-footer-product__icon">
+                        <use xlink:href="@img/icons/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-product__info info-footer-product">
+                  <div class="info-footer-product__inner">
+                    <div class="info-footer-product__item">
+                      <svg class="info-footer-product__icon">
+                        <use xlink:href="@img/icons/icons.svg#marker"></use>
+                      </svg>
+                      <div class="info-footer-product__content">
+                        <div class="info-footer-product__title">Доставка</div>
+                        <p class="info-footer-product__text">Доставка по всій Україні</p>
+                        <a href="#" class="info-footer-product__link arrow-link">Детальніше
+                          <svg class="arrow-link__icon">
+                            <use xlink:href="@img/icons/icons.svg#arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info-footer-product__item">
+                      <svg class="info-footer-product__icon">
+                        <use xlink:href="@img/icons/icons.svg#pay"></use>
+                      </svg>
+                      <div class="info-footer-product__content">
+                        <div class="info-footer-product__title">Оплата</div>
+                        <p class="info-footer-product__text">За допомогою карти, або при отриманні</p>
+                        <a href="#" class="info-footer-product__link arrow-link">Детальніше
+                          <svg class="arrow-link__icon">
+                            <use xlink:href="@img/icons/icons.svg#arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="info-footer-product__item">
+                      <svg class="info-footer-product__icon">
+                        <use xlink:href="@img/icons/icons.svg#help"></use>
+                      </svg>
+                      <div class="info-footer-product__content">
+                        <div class="info-footer-product__title">Підтримка</div>
+                        <p class="info-footer-product__text">Швидко консультуємо у будь-якому питанні</p>
+                        <a href="#" class="info-footer-product__link arrow-link">Детальніше
+                          <svg class="arrow-link__icon">
+                            <use xlink:href="@img/icons/icons.svg#arrow-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product__info info-product">
+            <div class="info-product__tabs tabs" data-tabs="tab">
+              <ul class="info-product__tabs-nav tabs__nav">
+                <li class="info-product__tabs-item tabs__item">
+                  <button class="info-product__tabs-btn tabs__btn" type="button">Опис товару</button>
+                </li>
+                <li class="info-product__tabs-item tabs__item">
+                  <button class="info-product__tabs-btn tabs__btn" type="button">Відгуки</button>
+                </li>
+              </ul>
+              <div class="info-product__tabs-content tabs__content">
+                <div class="info-product__tabs-panel tabs__panel">
+                  <p>Шампунь з білою глиною. До складу шампуню входить біла глина (каолін), яка є прекрасним засобом для
+                    зміцнення та відновлення волосся. Біла глина містить цинк, кремнезем і магній, а також інші
+                    компоненти, які мають оздоровлюючі та протизапальні властивості. Каолін стимулює кровообіг, зміцнює
+                    коріння, ефективний при випаданні та ламкості волосся, сприяє їх росту. Також біла глина живить
+                    волосся та шкіру голови, нормалізує роботу сальних залоз, заспокоює подразнену шкіру. У результаті
+                    застосування волосся набуває здорового та сяючого вигляду, а парфумованний аромат додасть неповторні
+                    легкі пахощі.</p>
+                  <p><b>Склад:</b> кокоїл ізетіонат натрію, кокосульфат натрію, біла глина, олія какао, олія ши,
+                    кокосова олія,
+                    оливкова олія, олія абрикосових кісточок, олія зародків кукурудзи, олія зародків пшениці, реп'яхова
+                    олія, олія авокадо, мигдальна олія, соєва олія, лляна олія, олія макадамії, рицинова олія, олія
+                    волоського горіха, д-пантенол, ефірна олія апельсина, ефірна олія, грейпфрута, каррагінан, алантоїн,
+                    парфумована композиція.</p>
+                  <p><b>Спосіб застосування:</b> Нанесіть на вологе волосся, вспіньте та змийте водою. При необхідності
+                    повторіть процедуру.</p>
+                  <p><b>Термін придатності:</b> 6 місяців з дати виготовлення.</p>
+                </div>
+                <div class="info-product__tabs-panel tabs__panel">Контент 2</div>
+              </div>
+            </div>
+
+            <div class="info-product__callback callback-info-product">
+              <div class="callback-info-product__title">Залиште свій відгук про даний товар</div>
+              <form class="callback-info-product__form" action="">
+                <div class="callback-info-product__row">
+                  <input type="text" class="callback-info-product__input" placeholder="Ваше ім'я та прізвище">
+                </div>
+                <div class="callback-info-product__row">
+                  <input type="text" class="callback-info-product__input" placeholder="E-mail (необов’язково)">
+                </div>
+                <div class="callback-info-product__row">
+                  <textarea class="callback-info-product__textarea" placeholder="Відгук"></textarea>
+                </div>
+                <div class="callback-info-product__evaluation">
+                  <span>Ваша оцінка:</span>
+                </div>
+                <button class="callback-info-product__btn btn">Залишити відгук</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html',{})
+    @@include('html/section/navigation-toolbar.html',{})
+  </div>
+  @@include('html/_js.html',{})
+</body>
+
+</html>

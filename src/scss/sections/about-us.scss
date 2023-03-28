@@ -1,0 +1,111 @@
+.about {
+  background-color: #FAFFF9;
+  padding: rem(10) 0;
+  @media(min-width: 768px) {
+    padding: rem(20) 0;
+  }
+  @media(min-width: 991px) {
+    padding: rem(40) 0;
+  }
+  // .about__container
+  &__container {}
+  // .about__title
+  &__title {
+    font-size: rem(22);
+    line-height: lh(28, 22);
+    font-weight: 700;
+    color: $green;
+    text-align: center;
+    margin-bottom: rem(10);
+    @media(min-width: 768px) {
+      font-size: rem(28);
+      line-height: lh(36, 28);
+    }
+    @media(min-width: 768px) {
+      font-size: rem(42);
+      line-height: lh(48, 42);
+      margin-bottom: rem(30);
+      color: transparent;
+      -webkit-text-stroke: rem(3) $green;
+    }
+  }
+  // .about__text
+  &__text {
+    font-size: rem(16);
+    line-height: lh(22, 16);
+    font-weight: 300;
+    text-indent: 1.5em;
+    margin-bottom: rem(10);
+    @media(min-width: 768px) {
+      font-size: rem(18);
+      line-height: lh(24, 18);
+      margin-bottom: rem(30);
+    }
+  }
+  // .about__items
+  &__items {}
+  // .about__items-wrapper
+  &__items-wrapper {
+    @media(min-width: 991px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(rem(340), 1fr));
+      gap: rem(20);
+    }
+  }
+  // .about__item
+  &__item {
+    padding: rem(15);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+    align-items: center;
+    border: 1px solid $green;
+    border-radius: rem(8);
+    min-height: rem(190);
+    @media(any-hover: hover) {
+      &:hover {
+        .about__item-image {
+          transform: translateY(rem(-5));
+        }
+        .about__item-text {
+          transform: translateY(rem(5));
+        }
+      }
+    }
+    @media(min-width: 756px) {
+      padding: rem(30);
+      min-height: rem(296);
+    }
+  }
+  // .about__item-image
+  &__item-image {
+    width: rem(60);
+    height: rem(80);
+    object-fit: contain;
+    transition: transform .3s ease 0s;
+    @media(min-width: 756px) {
+      width: rem(80);
+      height: rem(80);
+    }
+  }
+  // .about__item-text
+  &__item-text {
+    font-size: rem(16);
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+    transition: transform .3s ease 0s;
+    @media(min-width: 756px) {
+      font-size: rem(18);
+    }
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

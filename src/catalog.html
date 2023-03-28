@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Каталог"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main class="page page__catalog">
+
+      <div class="page__header">
+        <div class="page__container">
+          @@include('html/components/bredcrumbs.html',{})
+          <div class="page__header-title">
+            <h1 class="page__title">Натуральний твердий шампунь</h1>
+            <span>(16 позицій)</span>
+          </div>
+        </div>
+      </div>
+      <div class="catalog">
+        <div class="catalog__container">
+          <div class="catalog__filter filter-catalog" data-filter-catalog>
+            <div class="filter-catalog__header">
+              <button class="filter-catalog__title">
+                <svg class="filter-catalog__title-icon">
+                  <use xlink:href="@img/icons/icons.svg#filter"></use>
+                </svg>
+                Фільтр товарів
+              </button>
+              <button class="close-btn">
+                <svg class="filter-catalog__title-icon">
+                  <use xlink:href="@img/icons/icons.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="filter-catalog__item item-filter-catalog">
+              <button class="item-filter-catalog__heading accordion-heading_active">
+                Тип волосся
+                <svg class="item-filter-catalog__icon">
+                  <use xlink:href="@img/icons/icons.svg#filter-arrow"></use>
+                </svg>
+                <svg class="item-filter-catalog__icon">
+                  <use xlink:href="@img/icons/icons.svg#filter-arrow"></use>
+                </svg>
+              </button>
+              <div class="item-filter-catalog__content accordion-content_active">
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_1" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_1" class="checkbox__label">
+                    <span class="checkbox__text">Для жирного волосся</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_2" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_2" class="checkbox__label">
+                    <span class="checkbox__text">Для сухого волосся</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_3" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_3" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-catalog__item item-filter-catalog">
+              <button class="item-filter-catalog__heading">
+                Тип волосся
+                <svg class="item-filter-catalog__icon">
+                  <use xlink:href="@img/icons/icons.svg#filter-arrow"></use>
+                </svg>
+                <svg class="item-filter-catalog__icon">
+                  <use xlink:href="@img/icons/icons.svg#filter-arrow"></use>
+                </svg>
+              </button>
+              <div class="item-filter-catalog__content">
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_6" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_6" class="checkbox__label">
+                    <span class="checkbox__text">Для жирного волосся</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_4" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_4" class="checkbox__label">
+                    <span class="checkbox__text">Для сухого волосся</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_5" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_5" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_8" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_8" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_9" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_9" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_45" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_45" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+
+                <div class="item-filter-catalog__checkbox checkbox">
+                  <input id="c_12" type="checkbox" class="checkbox__input" value="1" name="form[]">
+                  <label for="c_12" class="checkbox__label">
+                    <span class="checkbox__text">Для всіх типів</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__content">
+            <section class="catalog__inner">
+              <h2 style="display: none;"></h2>
+              <div class="catalog__controls">
+                <button class="filter-catalog__title" data-filter-btn>
+                  <svg class="filter-catalog__title-icon">
+                    <use xlink:href="@img/icons/icons.svg#filter"></use>
+                  </svg>
+                  Фільтр товарів
+                </button>
+                <div class="select">
+                  <svg class="select__label-icon">
+                    <use xlink:href="@img/icons/icons.svg#select"></use>
+                  </svg>
+                  <label for="products" class="select__label">
+
+                    Сортування:</label>
+
+                  <select name="products" id="products">
+                    <option value="">За замовчуванням</option>
+                    <option value="price">За зростанням ціни</option>
+                    <option value="rating">За рейтингом</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="catalog__products">
+                @@include('html/components/card.html',{
+                "img": "@img/products/image1.jpg",
+                "img2": "@img/products/image3.jpg",
+                "title": "Натуральне мило з ромашкою",
+                })
+                @@include('html/components/card.html',{
+                "img": "@img/products/image4.jpg",
+                "img2": "@img/products/image1.jpg",
+                "title": "Шампунь з глинами (червона, рожева, жовта)",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image3.jpg",
+                "img2": "@img/products/image5.jpg",
+                "title": "Дегтярний шампунь",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img//products/image4.jpg",
+                "img2": "@img/products/image6.jpg",
+                "title": "Твердий бальзам-кондиціонер для волосся",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image5.jpg",
+                "img2": "@img/products/image1.jpg",
+                "title": "Оливкове мило",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image6.jpg",
+                "img2": "@img/products/image3.jpg",
+                "title": "Мило з трьома глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image1.jpg",
+                "img2": "@img/products/image8.jpg",
+                "title": "Мило із зеленою та блакитною глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image5.jpg",
+                "img2": "@img/products/image1.jpg",
+                "title": "Оливкове мило",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image5.jpg",
+                "img2": "@img/products/image1.jpg",
+                "title": "Оливкове мило",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image1.jpg",
+                "img2": "@img/products/image8.jpg",
+                "title": "Мило із зеленою та блакитною глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image6.jpg",
+                "img2": "@img/products/image3.jpg",
+                "title": "Мило з трьома глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image6.jpg",
+                "img2": "@img/products/image3.jpg",
+                "title": "Мило з трьома глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image1.jpg",
+                "img2": "@img/products/image8.jpg",
+                "title": "Мило із зеленою та блакитною глинами",
+                })
+
+                @@include('html/components/card.html',{
+                "img": "@img/products/image6.jpg",
+                "img2": "@img/products/image3.jpg",
+                "title": "Мило з трьома глинами",
+                })
+              </div>
+
+              <div class="catalog__footer">
+                <div class="catalog__footer-pagination pagination">
+                  <button class="pagination__btn pagination__btn-left">
+                    <svg class="pagination__icon">
+                      <use xlink:href="@img/icons/icons.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <ul class="pagination__list">
+                    <li class="pagination__item">
+                      <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="#" class="pagination__link pagination__link_active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="#" class="pagination__link">...</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="#" class="pagination__link">12</a>
+                    </li>
+                  </ul>
+                  <button class="pagination__btn pagination__btn-right">
+                    <svg class="pagination__icon">
+                      <use xlink:href="@img/icons/icons.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <div class="page__description description-page">
+              <h2 class="description-page__title">Переваги твердого шампуню:</h2>
+
+              <p>Твердий шампунь для волосся насичений вітамінами, корисними мікроелементами. У його складі - натуральні
+                олії: оливкова, абрикосових кісточок, виноградних кісточок, гірчиці, авокадо, мигдальна, зародків
+                кукурудзи, лляна, реп'яхова, соєва. Також у складі є глина , д-пантенол, диметикон, циклометикон,
+                кокосульфат натрію, кокоїл ізетіонат.</p>
+              <p>Д-пантенол - сприяє регенерації пошкодженої шкіри. Він створює тоненьку плівку, яка обволікає волосся
+                та захищає його від впливу негативних зовнішніх чинників. При цьому волосся залишаються легким, об'ємним
+                і сяючим, його товщина збільшується до 10%.</p>
+              <p>Диметикон пом'якшує шкіру та волосся, виконує кондиціонуючі функції, надає волоссю блиск і
+                шовковистість.</p>
+              <p>Циклометикон сприяє глибокому проникненню корисних речовин у волосся та шкіру, не перевантажуючи їх.
+                Знімає наелектризованість.</p>
+              <p>Кокосульфат натрію відмінно піниться, з легкістю розподіляється по всій довжині волосся та добре
+                промиває його, прекрасно змивається, не подразнює та не сушить шкіру голови, підходить для всіх типів
+                волосся.</p>
+              <p>Коко ізетіонат натрію ніжно очищає шкіру голови, ефективно прибирає забруднення з волосся, навіть у
+                воді підвищеної жорсткості, м'яко впливає на шкірні покриви.</p>
+              <p>Кокосульфат натрію і кокоїл ізетіонат натрію отримують з кокосового масла. Ці компоненти
+                біорозкладаються та не шкодять навколишньому середовищу. Їх дозволено використовувати в дитячій
+                косметиці.</p>
+              <p>Завдяки використанню шампуню, волосся стане більш доглянутим, шовковистим та природним. Купити
+                натуральний твердий шампунь можна в нашому інтернет-магазині натуральної продукції "Pinka".</p>
+            </div>
+
+            <section class="page__questions questions-page">
+              <h2 class="questions-page__title">Питання які найчастіше запитують про тверді шампуні</h2>
+              <section class="questions-page__item">
+                <div class="questions-page__hedaing">
+                  <svg class="questions-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#question"></use>
+                  </svg>
+                  <h3>Який шампунь краще підійде для фарбованого волосся?</h3>
+                  <svg class="questions-page__icon-arrow">
+                    <use xlink:href="@img/icons/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="questions-page__content">
+                  <p>Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в декількох
+                    стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.</p>
+                  <p>Полуторні ліжка нагадують односпальні, але зі збільшеною шириною — в середньому 120-140
+                    сантиметрів. Меблі підійдуть для одиночного сну людям з великою статурою або для худорлявої пари.
+                  </p>
+                  <p>Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в декількох
+                    стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.</p>
+                </div>
+              </section>
+              <section class="questions-page__item">
+                <div class="questions-page__hedaing">
+                  <svg class="questions-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#question"></use>
+                  </svg>
+                  <h3>Який шампунь краще підійде для фарбованого волосся?</h3>
+                  <svg class="questions-page__icon-arrow">
+                    <use xlink:href="@img/icons/icons.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="questions-page__content">
+                  <p>Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в декількох
+                    стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.</p>
+                  <p>Полуторні ліжка нагадують односпальні, але зі збільшеною шириною — в середньому 120-140
+                    сантиметрів. Меблі підійдуть для одиночного сну людям з великою статурою або для худорлявої пари.
+                  </p>
+                  <p>Односпальне ліжко — оптимальний варіант для сну однієї людини. Вироби представлені в декількох
+                    стандартних розмірах по ширині: 80-90, рідше — 100 сантиметрів.</p>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html',{})
+    @@include('html/section/navigation-toolbar.html',{})
+  </div>
+  @@include('html/_js.html',{})
+</body>
+
+</html>

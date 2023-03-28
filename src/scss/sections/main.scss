@@ -1,0 +1,223 @@
+.main {
+  background-color: #FAFFF9;
+  padding: rem(20) 0;
+  @media (min-width: 991px) {
+    padding: rem(40) 0;
+  }
+  
+  // .main__container
+  &__container {
+    display: grid;
+    
+    @media (min-width:991px) {
+      grid-template-columns: 1fr percent(520, 1600);
+      gap: rem(20);
+    }
+  }
+  // .main__content
+  &__content {}
+  // .main__slider
+  &__slider {}
+}
+.content-main {
+  // min-height: 60vh;
+  // padding: rem(10) rem(10);
+  padding: rem(12) rem(12) percent(394, 1600) rem(12);
+  border-radius: rem(8);
+  background-image: url(../img/section-main/products.png);
+  background-repeat: no-repeat;
+  background-size: percent(656, 1060);
+  background-position: right bottom;
+  padding-bottom: percent(390, 1600);
+  @media (min-width:576px) {
+    padding: rem(20) rem(12) percent(390, 1600) rem(12);
+  }
+  @media (min-width: 765px) {
+    padding: rem(30) rem(20) percent(390, 1600) rem(20);
+  }
+  @media (min-width: 991px) {
+    padding: rem(50) rem(30) percent(390, 1600) rem(30);
+  }
+  @media (min-width: 1333px) {
+    padding: rem(70) rem(50) percent(390, 1600) rem(50);
+  }
+  
+  // .content-main__title
+  &__title {
+    max-width: rem(700);
+    width: 100%;
+    font-size: rem(18);
+    line-height: lh(26, 18);
+    font-weight: 600;
+    margin-bottom: rem(10);
+    min-height: rem(120);
+    span {
+      color: rgba(219, 128, 91, 1);
+    }
+    @media (min-width: 360px) {
+      font-size: rem(20);
+    }
+
+    @media (min-width: 576px) {
+      font-size: rem(22);
+      margin-bottom: rem(20);
+    }
+    @media (min-width: 576px) {
+      font-size: rem(22);
+      margin-bottom: rem(20);
+    }
+    @media (min-width: 765px) {
+      font-size: rem(36);
+      line-height: lh(52, 36);
+      margin-bottom: rem(30);
+    }
+  }
+  // .content-main__text
+  &__text {
+    max-width: rem(480);
+    width: 100%;
+    font-weight: 500;
+    line-height: lh(24, 16);
+    margin-bottom: rem(20);
+    @media (min-width: 576px) {
+      margin-bottom: rem(30);
+    }
+    @media (min-width: 768px) {
+      margin-bottom: rem(50);
+    }
+  }
+  // .content-main__btn
+  &__btn {}
+}
+
+
+.slider-main {
+  display: none;
+  @media (min-width: 991px) {
+    display: block;
+    padding: rem(60) rem(20) rem(10) rem(20);
+    border-radius: rem(8);
+    position: relative;
+    overflow: hidden;
+  }
+  @media (min-width: 1333px) {
+    padding: rem(80) rem(30) rem(10) rem(30);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/section-main/animation-love.svg);
+    width: rem(100);
+    height: rem(84);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    animation: 6s linear infinite love;
+    opacity: 0;
+  }
+  // .slider-main__swiper
+  &__swiper {
+    height: 100%;
+  }
+  // .slider-main__wrapper
+  &__wrapper {}
+  // .slider-main__slide
+  &__slide {}
+  // .slider-main__title
+  &__title {
+    font-size: rem(32);
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: rem(30);
+  }
+  // .slider-main__promo
+  &__promo {
+    font-size: rem(28);
+    line-height: 1;
+    font-weight: 600;
+    color: $green;
+    margin-bottom: rem(30);
+  }
+  // .slider-main__image
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: percent(198, 520);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.btn {
+}
+.btn-arrow {
+  // .btn-arrow__icon
+  &__icon {}
+}
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
+
+.slider-arrows__inner {
+  position: absolute;
+  top: rem(10);
+  right: rem(10);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: rem(10);
+}
+
+.slider-arrow {
+  width: rem(40);
+  height: rem(40);
+  border: 1px solid $green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1333px) {
+    width: rem(60);
+    height: rem(60);
+  }
+  &__icon {
+    width: rem(20);
+    height: rem(20);
+    fill: $green;
+    transition: fill .3s ease 0s;
+    @media (min-width: 1333px) {
+      width: rem(30);
+    height: rem(30);
+    }
+  }
+  &:active {
+    .slider-arrow__icon {
+      transform: translateX(rem(2));
+    }
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      cursor: pointer;
+      transition: background-color .3s ease 0s;
+      background-color: $green;
+      .slider-arrow__icon {
+        fill: $white;
+      }
+    }
+  }
+  &__left {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,27 @@
+.module {
+  padding: rem(20) 0;
+  background-color: #FAFFF9;
+  @media(min-width: 768px) {
+    padding: rem(40) 0;
+  }
+  // .module-goods__container
+  &__container {}
+  // .module-goods__hedaer
+  &__hedaer {}
+  // .module-goods__inner
+  &__inner {
+    padding: rem(26) rem(20);
+    margin: rem(-26) rem(-20);
+  }
+  // .module-goods__wrapper
+  &__wrapper {
+    @media(min-width: 991px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(rem(385), 1fr));
+      gap: rem(20);
+    }
+  }
+  &__card {
+    height: auto !important;
+  }
+}
