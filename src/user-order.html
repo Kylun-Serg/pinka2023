@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"About us"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main class="page page__profile">
+      <div class="page__header">
+        <div class="page__container">
+          @@include('html/components/bredcrumbs.html',{})
+        </div>
+      </div>
+      <div class="profile-page">
+        <div class="profile-page__container">
+          <aside class="profile-page__aside aside-profile-page info-page__section">
+            <img src="./img/profile/user-photo.png" alt="image" class="aside-profile-page__image">
+            <div class="aside-profile-page__name">Олена Веремієнко</div>
+            <ul class="aside-profile-page__menu">
+              <li class="aside-profile-page__item">
+                <a href="#" class="aside-profile-page__link">
+                  <svg class="aside-profile-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#user"></use>
+                  </svg>
+                  Інформація про мене
+                </a>
+              </li>
+              <li class="aside-profile-page__item">
+                <a href="#" class="aside-profile-page__link">
+                  <svg class="aside-profile-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#cart"></use>
+                  </svg>
+                  Мої замовлення
+                </a>
+              </li>
+              <li class="aside-profile-page__item">
+                <a href="#" class="aside-profile-page__link">
+                  <svg class="aside-profile-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#favorite"></use>
+                  </svg>
+                  Обрані товари
+                </a>
+              </li>
+              <li class="aside-profile-page__item">
+                <a href="#" class="aside-profile-page__link">
+                  <svg class="aside-profile-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#bonus"></use>
+                  </svg>
+                  Бонусні бали
+                </a>
+              </li>
+              <li class="aside-profile-page__item">
+                <a href="#" class="aside-profile-page__link">
+                  <svg class="aside-profile-page__icon">
+                    <use xlink:href="@img/icons/icons.svg#exit"></use>
+                  </svg>
+                  Вихід
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <div class="profile-page__content info-page__section">
+            <h1 class="profile-page__title">Вхід до особистого кабінету:</h1>
+            <table class="profile-page__table table-profile-page scroll-container-x">
+              <tr class="table-profile-page__caption">
+                <th>№ Замовлення</th>
+                <th>Дата</th>
+                <th>Кількість</th>
+                <th>Вартість</th>
+                <th>Статус</th>
+                <th>Детально</th>
+              </tr>
+              <tr class="table-profile-page__row">
+                <td>#8100</td>
+                <td>28.03.2023</td>
+                <td>10</td>
+                <td>560 грн.</td>
+                <td>В оброці</td>
+                <td>
+                  <a href="#">
+                    <svg class="table-profile-page__icon">
+                      <use xlink:href="@img/icons/icons.svg#btn-details"></use>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-profile-page__row">
+                <td>#8100</td>
+                <td>28.03.2023</td>
+                <td>10</td>
+                <td>560 грн.</td>
+                <td>В оброці</td>
+                <td>
+                  <a href="#">
+                    <svg class="table-profile-page__icon">
+                      <use xlink:href="@img/icons/icons.svg#btn-details"></use>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-profile-page__row">
+                <td>#8100</td>
+                <td>28.03.2023</td>
+                <td>10</td>
+                <td>560 грн.</td>
+                <td>В оброці</td>
+                <td>
+                  <a href="#">
+                    <svg class="table-profile-page__icon">
+                      <use xlink:href="@img/icons/icons.svg#btn-details"></use>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-profile-page__row">
+                <td>#8100</td>
+                <td>28.03.2023</td>
+                <td>10</td>
+                <td>560 грн.</td>
+                <td>В оброці</td>
+                <td>
+                  <a href="#">
+                    <svg class="table-profile-page__icon">
+                      <use xlink:href="@img/icons/icons.svg#btn-details"></use>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-profile-page__row">
+                <td>#8100</td>
+                <td>28.03.2023</td>
+                <td>10</td>
+                <td>560 грн.</td>
+                <td>В оброці</td>
+                <td>
+                  <a href="#">
+                    <svg class="table-profile-page__icon">
+                      <use xlink:href="@img/icons/icons.svg#btn-details"></use>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html',{})
+    @@include('html/section/navigation-toolbar.html',{})
+  </div>
+  @@include('html/_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.scroll-container-x {
+  overflow-x: scroll;
+  scrollbar-width: none; /* убираем стандартный скролл */
+}
+
+.scroll-container-y {
+  overflow-y: scroll;
+  scrollbar-width: none; /* убираем стандартный скролл */
+}

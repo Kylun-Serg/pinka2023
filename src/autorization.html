@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"About us"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main class="page page__autorization">
+      <div class="page__header">
+        <div class="page__container">
+          @@include('html/components/bredcrumbs.html',{})
+          <div class="page__header-title">
+            <h1 class="page__title">Авторизація</h1>
+          </div>
+        </div>
+      </div>
+      <div class="autorization-page">
+        <div class="autorization-page__container">
+          <div class="autorization-page__wrap">
+            <div class="info-page__section autorization-page__login login-autorization-page">
+              <h4 class="login-autorization-page__title">Вхід до особистого кабінету:</h4>
+              <div class="form-row__box">
+                <div class="form-row">
+                  <input type="email" required class="form-row__input" placeholder=" ">
+                  <label for="" class="form-row__label">Ваш Еmail</label>
+                </div>
+                <div class="form-row">
+                  <input type="password" required class="form-row__input" placeholder=" ">
+                  <label for="" class="form-row__label">Пароль</label>
+                </div>
+              </div>
+              <a href="#" class="form-row__forgot">Забули пароль?</a>
+              <button type="button" class="btn">Увійти</button>
+            </div>
+
+            <div class="info-page__section autorization-page__login login-autorization-page">
+              <h4 class="login-autorization-page__title">Немає особистого кабінету?</h4>
+              <img class="login-autorization-page__image" src="./img/profile/autorization.png" alt="image">
+              <p class="login-autorization-page__text">Маючи обліковий запис Ви зможете швише формлювати замовлення,
+                контролювати стан замовлення, а також переглядати замовлення зроблені раніше. Ви зможете накопичувати
+                бали і отримувати знижкові купони.</p>
+              <button type="button" class="btn">Зареєструватися</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html',{})
+    @@include('html/section/navigation-toolbar.html',{})
+  </div>
+  @@include('html/_js.html',{})
+</body>
+
+</html>

@@ -81,20 +81,7 @@
     }
   }
   // .item-set-goods__btn
-  &__btn {
-    padding: rem(8) rem(10);
-    font-size: rem(14);
-    position: relative;
-    z-index: 10;
-    align-self: flex-start;
-    @media(any-hover: hover) {
-      transition: transform .3s ease 0s;
-    }
-    @media(min-width: 576px) {
-      padding: rem(10) rem(16);
-     
-    }
-  }
+  &__btn {}
   // .item-set-goods_image
   &__image {
     display: inline-flex;

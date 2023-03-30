@@ -1,0 +1,46 @@
+.autorization-page {
+  // .autorization-page__container
+  &__container {}
+  // .autorization-page__wrap
+  &__wrap {
+    @media (min-width: 991px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: rem(30);
+    }
+  }
+  // .autorization-page__login
+  &__login {}
+}
+
+.login-autorization-page {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  .btn {
+    justify-content: center;
+    @media (min-width: 768px) {
+      align-self: flex-start;
+      
+    }
+  }
+  // .login-autorization-page__title
+  &__title {
+    font-size: rem(22);
+    line-height: lh(28, 22);
+    font-weight: 500;
+    @media (min-width: 768px) {
+      font-size: rem(24);
+    }
+  }
+  // .login-autorization-page__image
+  &__image {
+    max-width: rem(290);
+    width: 100%;
+    object-fit: contain;
+  }
+  // .login-autorization-page__text
+  &__text {
+    line-height: 1.3;
+  }
+}

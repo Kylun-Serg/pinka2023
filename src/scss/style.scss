@@ -31,6 +31,7 @@
 @import "./components/checkbox";
 @import "./components/pagination";
 @import "./components/tabs";
+@import "./components/scroll";
 // @import 'nouislider/dist/nouislider.css';
 @import '../../node_modules/swiper/swiper';
 
@@ -57,3 +58,5 @@
 @import './page/product';
 @import './page/order';
 @import './page/info-page';
+@import './page/autorization';
+@import './page/profile';

@@ -338,6 +338,19 @@
       padding: rem(30) rem(20) rem(20) rem(20);
     }
   }
+  // .form-row__forgot
+  &__forgot {
+    color: $green;
+    display: block;
+    @media(any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__box {
+    // width: 100%;
+  }
 }
 
 .form-row__input:not(:placeholder-shown).form-row__input:not(:focus) + .form-row__label {

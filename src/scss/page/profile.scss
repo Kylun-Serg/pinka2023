@@ -1,0 +1,174 @@
+.profile-page {
+  // .profile-page__container
+  &__container {
+    @media(min-width: 991px) {
+      display: grid;
+      grid-template-columns: percent(460, 1600) 1fr;
+      gap: rem(30);
+    }
+  }
+  // .profile-page__aside
+  &__aside {}
+  // .profile-page__content
+  &__content {}
+  // .profile-page__title
+  &__title {
+    font-size: rem(20);
+    line-height: lh(26, 20);
+    font-weight: 500;
+    margin-bottom: rem(16);
+    @media(min-width:768px) {
+      font-size: rem(24);
+      margin-bottom: rem(30);
+    }
+  }
+  // .profile-page__table
+  &__table {}
+}
+.aside-profile-page {
+  text-align: center;
+  // .aside-profile-page__image
+  &__image {
+    max-width: rem(160);
+    width: 100%;
+    height: rem(160);
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: rem(16);
+  }
+  // .aside-profile-page__name
+  &__name {
+    font-weight: 500;
+    margin-bottom: em(30, 16);
+  }
+  // .aside-profile-page__menu
+  &__menu {}
+  // .aside-profile-page__item
+  &__item {    
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+    @media(min-width: 576px) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  // .aside-profile-page__link
+  &__link {
+    padding: rem(10) rem(16);
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    background-color: $green;
+    color: $white;
+    border-radius: rem(8);
+    transition: gap .3s ease 0s, background-color .3s ease 0s;
+    @media(any-hover: hover) {
+      &:hover {
+        gap: rem(20);
+        background-color: darken($green, 8%);
+      }
+
+    }
+    &:active {
+      transform: translateY(rem(1));
+    }
+  }
+  // .aside-profile-page__icon
+  &__icon {
+    fill: $white;
+    width: rem(26);
+    height: rem(26);
+    flex: 0 0 auto;
+  }
+}
+
+.table-profile-page {
+  display: block;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $green;
+  background-color: $white;
+  overflow: auto;
+  font-size: rem(14);
+  @media(min-width: 576px) {
+    font-size: rem(16);
+  }
+  @media(min-width: 991px) {
+    display: table;
+    width: 100%;
+  }
+  
+  &__caption, &__row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: rem(6);
+    align-items: center;
+    background-color: $lGreen;
+    text-align: left;
+    padding: rem(2) rem(2);
+    @media(min-width: 576px) {
+      padding: rem(5) rem(10);
+      gap: rem(10);
+    }
+    td:last-child, th:last-child {
+      text-align: center;
+    }
+    td, th {
+      text-align: center;
+      @media(min-width: 991px) {
+        text-align: left;
+      }
+      
+    }
+
+  }
+  // .table-profile-page__caption
+  &__caption {
+    height: rem(40);
+    margin-bottom: rem(10);
+    @media(min-width: 576px) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  // .table-profile-page__row
+  &__row {
+    // text-align: center;
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    &:last-child {
+      border-bottom: none;
+    }
+    @media(any-hover: hover) {
+      &:hover {
+        border-top: 2px solid $green;
+        border-bottom: 2px solid $green;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    @media(min-width: 576px) {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  // .table-profile-page__icon
+  &__icon {
+    width: rem(30);
+    height: rem(30);
+    fill: $green;
+    @media(min-width: 576px) {
+      width: rem(40);
+      height: rem(40);
+    }
+  }
+}

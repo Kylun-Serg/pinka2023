@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Delivery"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main class="page page__info">
+      <div class="page__header">
+        <div class="page__container">
+          @@include('html/components/bredcrumbs.html',{})
+          <div class="page__header-title">
+            <h1 class="page__title">Оплата та доставка</h1>
+          </div>
+        </div>
+      </div>
+      <div class="info-page info-page-contact">
+        <div class="info-page__container">
+
+          <div class="info-page__section">
+            <ul class="info-page-contact__items">
+
+              <li class="info-page-contact__item item-page-contact">
+                <div class="item-page-contact__cicle">
+                  <svg class="item-page-contact__icon">
+                    <use xlink:href="@img/icons/icons.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="item-page-contact__content">
+                  <div class="item-page-contact__title">Телефони:</div>
+                  <ul class="item-page-contact__list">
+                    <li class="item-page-contact__item"> <a class="item-page-contact__link" href="#">+38 066
+                        570-35-91</a></li>
+                    <li class="item-page-contact__item"> <a class="item-page-contact__link" href="#">+38 066
+                        570-35-91</a></li>
+                    <li class="item-page-contact__item"> <a class="item-page-contact__link" href="#">+38 066
+                        570-35-91</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="info-page-contact__item item-page-contact">
+                <div class="item-page-contact__cicle">
+                  <svg class="item-page-contact__icon">
+                    <use xlink:href="@img/icons/icons.svg#email"></use>
+                  </svg>
+                </div>
+                <div class="item-page-contact__content">
+                  <div class="item-page-contact__title">Напишіть нам:</div>
+                  <a class="item-page-contact__link" href="mailto:store.pinka@gmail.com">store.pinka@gmail.com</a>
+                  <ul class="item-page-contact__social social">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="@img/icons/icons.svg#telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="@img/icons/icons.svg#viber"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="@img/icons/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon">
+                          <use xlink:href="@img/icons/icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="info-page-contact__item item-page-contact">
+                <div class="item-page-contact__cicle">
+                  <svg class="item-page-contact__icon">
+                    <use xlink:href="@img/icons/icons.svg#marker"></use>
+                  </svg>
+                </div>
+                <div class="item-page-contact__content">
+                  <div class="item-page-contact__title">Де ми знаходимось:</div>
+                  <address class="item-page-contact__address">
+                    Україна, м.Суми, Сумський р-н, смт. Краснопілля, 42400
+                  </address>
+                </div>
+              </li>
+
+              <li class="info-page-contact__item item-page-contact">
+                <div class="item-page-contact__cicle">
+                  <svg class="item-page-contact__icon">
+                    <use xlink:href="@img/icons/icons.svg#calendar"></use>
+                  </svg>
+                </div>
+                <div class="item-page-contact__content">
+                  <div class="item-page-contact__title">Графік роботи:</div>
+                  <div class="item-page-contact__time">Працюємо щодня з 9:00 до 18:00</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-page__section">
+            <div class="info-page-contact__feddback">
+              <div class="info-page-contact__form form-page-contact">
+                <div class="form-page-contact__title">Напишіть нам!</div>
+                <p class="form-page-contact__text">Якщо у Вас є запитання, побажання щодо якості обслуговування,
+                  пропозиції щодо партнерства, напишіть нам і ми зв`яжемося з вами!</p>
+                <div class="form-row">
+                  <input type="text" required class="form-row__input" placeholder=" ">
+                  <label for="" class="form-row__label">Ім’я</label>
+                </div>
+                <div class="form-row">
+                  <input type="text" required class="form-row__input" placeholder=" ">
+                  <label for="" class="form-row__label">Email (необов’язково)</label>
+                </div>
+                <div class="form-row">
+                  <textarea name="" type="text" class="form-row__textarea" placeholder=" "></textarea>
+                  <label for="" class="form-row__label">Ваш коментар до замовлення</label>
+                </div>
+                <button type="button" class="btn order__buttons-btn">Відправити</button>
+                <div class="order__buttons-terms">Натискаючи кнопку "Відправити", я приймаю умови <a href="#">Угоди
+                    користувача</a>
+                </div>
+
+              </div>
+              <div class="info-page-contact__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7136.911857388267!2d35.256393917113215!3d50.7703942866105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1680001196483!5m2!1sen!2sua"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html',{})
+    @@include('html/section/navigation-toolbar.html',{})
+  </div>
+  @@include('html/_js.html',{})
+</body>
+
+</html>
