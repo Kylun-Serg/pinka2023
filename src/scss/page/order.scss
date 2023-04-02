@@ -30,14 +30,14 @@
   // .order__cart-container
   &__cart-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
     gap: rem(10);
     margin-bottom: rem(20);
     @media (min-width: 460px) {
-      grid-template-columns: repeat(auto-fit, minmax(rem(360), 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(rem(360), 1fr));
     }
     @media (min-width: 991px) {
-      grid-template-columns: repeat(auto-fit, minmax(rem(420), 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(rem(420), 1fr));
       gap: rem(20);
     }
   }

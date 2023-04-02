@@ -1,9 +1,23 @@
 .scroll-container-x {
-  overflow-x: scroll;
-  scrollbar-width: none; /* убираем стандартный скролл */
+  overflow-x: auto;
+
 }
 
 .scroll-container-y {
-  overflow-y: scroll;
-  scrollbar-width: none; /* убираем стандартный скролл */
+  overflow-x: auto;
+  @media(min-width: 768px) {
+    padding-right: rem(8);
+    &::-webkit-scrollbar {
+      width: rem(6);
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: $lGreen;        /* цвет зоны отслеживания */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $green;    /* цвет бегунка */
+      border-radius: rem(8);       /* округлось бегунка */
+    }
+  }
+  
 }

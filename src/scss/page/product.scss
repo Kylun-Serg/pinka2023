@@ -153,6 +153,13 @@
     align-items: center;
     gap: rem(6);
     flex: 0 0 auto;
+    transition: color .3s ease 0s;
+    @media(any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        color: $green;
+      }
+    }
   }
   // .review-header-product__review-icon
   &__review-icon {
@@ -291,34 +298,7 @@
     flex: 0 0 auto;
   }
   // .actions-body-product__btn
-  &__btn {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: rem(8);
-    background-color: $green;
-    border-radius: rem(8);
-    color: $white;
-    font-size: rem(18);
-    font-weight: 700;
-    padding: em(13, 18) em(30, 18);
-    &:active {
-      transform: translateY(rem(2));
-    }
-    @media(any-hover: hover) {
-      &:hover {
-        background-color: darken($green, 8%);
-        .actions-body-product__icon {
-          transform: translateY(rem(-2));
-        }
-      }
-    }
-    @media(min-width: 576px) {
-      width: auto;
-      gap: rem(12);
-    }
-  }
+  &__btn {}
   // .actions-body-product__icon
   &__icon {
     width: rem(20);

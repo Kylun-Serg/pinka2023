@@ -4,10 +4,19 @@
     <img class="product-card__image-additional" src="@@img2" alt="Мило з ромашкою">
   </a>
   <div class="product-card__content">
-    <div class="product-card__weight product-weight">
-      <span>100 гр.</span>
-      <span class="weight_active">200 гр.</span>
-    </div>
+    <form>
+      <div class="product-card__weight product-weight">
+        <label class="product-weight__label">
+          <input type="radio" name="product-weight" class="product-weight__input">
+          <div class="product-weight__value">100 гр.</div>
+        </label>
+
+        <label class="product-weight__label">
+          <input type="radio" name="product-weight" class="product-weight__input" checked>
+          <div class="product-weight__value">200 гр.</div>
+        </label>
+      </div>
+    </form>
     <h3 class="product-card__title"><a href="#">@@title</a></h3>
     <div class="product-card__rating rating-card">
       <svg class="rating-card__icon">

@@ -51,11 +51,11 @@
   // .catalog__products
   &__products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(rem(296), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(rem(296), 1fr));
     gap: rem(10);
     margin-bottom: rem(20);
     @media(min-width: 576px) {
-      grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
       gap: rem(20);
       margin-bottom: rem(30);
     }

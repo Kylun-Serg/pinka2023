@@ -1,0 +1,102 @@
+.review {
+  // .review__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+    @media(min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+  &__question,  &__answer {
+    background-color: $white;
+    padding: rem(10);
+    border-radius: rem(8);
+    border: 1px solid #E3E2E2;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    @media(min-width: 768px) {
+      padding: rem(30);
+    }
+  }
+  // .review__question
+  &__question {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  // .review__footer
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10);
+    font-size: rem(17);
+    line-height: lh(22, 17);
+    margin-bottom: rem(10);
+    @media(min-width: 768px) {
+      gap: rem(20);
+    }
+  }
+  // .review__user
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    @media(min-width: 768px) {
+      gap: rem(20);
+    }
+  }
+  // .review__circle
+  &__circle {
+    border: 1px solid $green;
+    border-radius: 50%;
+    width: rem(50);
+    height: rem(50);
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .review__icon
+  &__icon {
+    fill: $green;
+    width: rem(22);
+    height: rem(22);
+    
+  }
+  // .review__name
+  &__name {
+    font-weight: 500;
+  }
+  // .review__date
+  &__date {}
+  // .review__content
+  &__content {
+    line-height: lh(24, 16);
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+    @media(min-width: 768px) {
+      line-height: lh(30, 16);
+    }
+  }
+  // .review__rating
+  &__rating {
+    font-size: rem(18);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+  // .review__answer
+  &__answer {
+    margin-left: 6%;
+  }
+}
+.rating {
+  // .rating__icon
+  &__icon {}
+}

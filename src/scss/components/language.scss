@@ -1,0 +1,33 @@
+.language {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  // .language__item
+  &__item {
+    border-radius: 50%;
+
+    border: 1px solid $green;
+    
+    position: relative;
+    transition: transform .3s ease 0s;
+    // .language__item_active
+    &_active {
+      background-color: $green;
+      color: $white;
+    }
+    @media(any-hover: hover) {
+      &:hover {
+        transform: translateY(rem(-2));
+      }
+    }
+  }
+  // .language__link
+  &__link {
+    display: inline-block;
+    width: rem(32);
+    height: rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

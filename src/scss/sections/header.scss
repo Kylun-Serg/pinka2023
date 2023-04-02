@@ -16,7 +16,7 @@
 .top-header {
   padding: rem(10) 0;
   @media(min-width: 991px) {
-    height: rem(60);
+    min-height: rem(60);
   }
   // .top-header__container
   &__container {
@@ -55,7 +55,8 @@
     }
     @media(min-width: 576px) {
       padding:  rem(20);
-      gap: rem(30);
+      column-gap: rem(30);
+      row-gap: rem(16);
     }
     @media(min-width: 991px) {
       height: 100%;
@@ -143,17 +144,17 @@
   }
 }
 .contacts-top-header {
-  display: flex;
-  gap: rem(10);
   font-size: rem(16);
   font-weight: 500;
-  @media(min-width: 1333px) {
-    gap: rem(30);
-  }
-  @media(max-width: 990px) {
+  display: grid;
+  gap: rem(10);
+  @media(min-width: 991px) {
+    display: flex;
     flex-wrap: wrap;
   }
-
+  @media(min-width: 1460px) {
+    gap: rem(30);
+  }
   // .contacts-top-header__social
   &__social {
     display: flex;
@@ -205,7 +206,7 @@
   // .messengers-top-header__name
   &__name {
     display: none;
-    @media(min-width: 1333px) {
+    @media(min-width: 1460px) {
       display: block;
     }
     @media(max-width: 990px) {
@@ -244,7 +245,7 @@
 
 
 .body-header {
-  background-color: #FAFFF9;
+  background-color: $llGreen;
   padding: rem(10) 0;
   // .body-header__container
   &__container {
@@ -619,7 +620,6 @@
   &__content {
     // max-height:60vh;
     max-height:calc(100vh - 230px);
-    overflow: auto;
     @media(min-width: 576px) {
       // max-height:67vh;
       max-height:calc(100vh - 310px);

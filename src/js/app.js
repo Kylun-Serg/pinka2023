@@ -51,25 +51,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } catch (error) { }
   //select
-  const selectCountry = new Select('#select-country', {
-    placeholder: 'Країна',
-    selectedId: '0',
-    data: [
-      { id: '1', value: 'Україна' },
-      { id: '2', value: 'Франція' },
-    ]
-  });
-
-  const selectREgion = new Select('#select-region', {
-    placeholder: 'Область',
-    selectedId: '0',
-    data: [
-      { id: '1', value: 'Сумська' },
-      { id: '2', value: 'Харківська' },
-      { id: '3', value: 'Херсонська' },
-      { id: '4', value: 'Полтавська' },
-      { id: '5', value: 'Київська' },
-    ]
-  });
+  try {
+    const selectCountry = new Select('#select-country', {
+      placeholder: 'Країна',
+      selectedId: '0',
+      data: [
+        { id: '1', value: 'Україна' },
+        { id: '2', value: 'Франція' },
+      ]
+    });
+  } catch (error) { }
+  try {
+    const selectREgion = new Select('#select-region', {
+      placeholder: 'Область',
+      selectedId: '0',
+      data: [
+        { id: '1', value: 'Сумська' },
+        { id: '2', value: 'Харківська' },
+        { id: '3', value: 'Херсонська' },
+        { id: '4', value: 'Полтавська' },
+        { id: '5', value: 'Київська' },
+      ]
+    });
+  } catch (error) { }
 
 });
